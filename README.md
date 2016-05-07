@@ -13,4 +13,8 @@ Using this definition we can test whether a regular expression *L* matches a str
 ######To run with Glasgow Haskell Compiler:  
 `$ ghci Brzozowski.hs` and type main within the REPL  
 or  
-`$ ghc Brzozowski.hs; ./Brzozowski`  
+`$ ghc Brzozowski.hs; ./Brzozowski`
+
+######For example,  
+`regexMatch (regex "(a|b)*abb") "abaabb"` will give `True`  
+`regexMatch (regex "(a|b)*abb") "abaab"` will give `False`  
