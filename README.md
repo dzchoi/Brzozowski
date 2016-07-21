@@ -1,7 +1,7 @@
 # Brzozowski
 ### Brzozowski's algorithm in Haskell
 
-The Brzozowski’s algorithm is the most beautiful and concise algorithm for compiling and matching regular expressions. The state that changes as reading and matching each input symbol against a regular expression is defined to be the regular expression itself in the Brzozowski’s algorithm. That is, while matching a symbol, the regular expression gets changed to another regular expression that is supposed to match the rest of input symbols expected to be matched.
+The Brzozowski’s algorithm is one of the most beautiful and most concise algorithm for compiling and matching regular expressions. In the Brzozowski’s algorithm, the state that changes as reading and matching each input symbol against a regular expression is defined to be the regular expression itself. That is, while matching a symbol, the regular expression gets changed into another regular expression that is supposed to match the rest of input symbols expected to be matched.
 
 ### The algorithm is simple and beautiful.
 The derivative of a regular expression *L* at a symbol *c* is defined as:  
