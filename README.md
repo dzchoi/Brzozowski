@@ -6,7 +6,7 @@ The Brzozowski’s algorithm is one of the most beautiful and most concise algor
 ### The algorithm is simple and beautiful.
 The derivative of a regular expression *L* at a symbol *c* is defined as:  
 > D<sub>c</sub>(L) := {w | cw ∈ L}  
-> That is, if *L* can match *c* as the first symbol, the derivative D<sub>c</sub>(L) is defined to be another regular expression that is supposed to match the remaining symbols beyond *c*.  
+> That is, if *L* can match *c* at the first symbol, the derivative D<sub>c</sub>(L) is defined to be another regular expression that is supposed to match the remaining symbols beyond *c*.  
 
 Using this definition we can test whether a regular expression *L* matches a string of symbols *s*(= *abc...z*) such as:
 > *L* matches *s* if and only if ε ∈ D<sub>z</sub>...D<sub>c</sub>D<sub>b</sub>D<sub>a</sub>(L)  
